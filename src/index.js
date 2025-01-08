@@ -12,5 +12,8 @@ root.render(
 );
 
 //React component names must always start with a capital letter, while HTML tags must be lowercase.
-// this now i am making commit to these file
+// to commit change in git repositry we have to make following changes
+// git add src/index.js
+// git commit -m "we have to write any message"
+// finally git push
 reportWebVitals();
