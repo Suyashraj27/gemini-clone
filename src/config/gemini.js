@@ -1,10 +1,8 @@
-import {
-    GoogleGenerativeAI,
-    
-  }  from '@google/generative-ai';
+import {GoogleGenerativeAI}  from '@google/generative-ai';
   
   // Direct substitution of API key
-  const apiKey = "AIzaSyAO7_0k3TTL9D9eAqe8uIMmRdl8iV9KDj4";
+  const apiKey = process.env.REACT_APP_GOOGLE_API_KEY;
+
   const genAI = new GoogleGenerativeAI(apiKey);
   
   const model = genAI.getGenerativeModel({
@@ -30,6 +28,6 @@ import {
     console.log(result.response.text());
     return response.text();
   }
-  
+  console.log("API Key: ", apiKey);
   export default run;
   
